@@ -1,0 +1,862 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+    text-align: center; 
+}
+
+/* Masthead */
+#masthead{
+  clear: both;
+    background-image: url("../images/masthead.jpg");
+    max-width:100%;
+    height:auto;
+    clear: both;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+#masthead h1{
+	  display: block;
+    margin-bottom: 15px;
+    font-family: "Pacifico", cursive;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3bbeef;
+}
+#masthead p{
+    color: #a5539b;
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+    #masthead h1{
+      font-size: 24px;
+      transition: all 0.5s ease;
+    }
+    #masthead p{
+      font-size: 18px;
+      transition: all 0.5s ease;
+    }
+}
+@media screen and (max-width: 480) {
+    #masthead h1{
+      font-size: 20px;
+      transition: all 0.5s ease;
+    }
+    #masthead p{
+      font-size: 16px;
+      transition: all 0.5s ease;
+    }
+}
+
+/* Navigation Bar */
+#nav{
+}
+#navbar ul {
+  list-style-type: none;
+  background: #a5539b;
+  padding: .5%;
+}
+#navbar ul li {
+  display: inline-block;
+}
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  background: #a5539b;
+  padding: 18px;
+  font-size: 1.3em;
+  transition: all 0.5s ease;
+}
+#navbar ul li a:hover {
+    color: #3bbeef;  
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #navbar ul{
+    padding-left: .2%;
+    font-size: .8em;
+  }
+}
+@media screen and (max-width: 481px) and (max-width: 767px) {
+  #navbar ul{
+    padding-left: 0;
+  }
+  #navbar ul li{
+    display: block;
+  }
+  #navbar ul li a{
+    display: block;
+    text-align: center;
+    font-size: .8em;
+  }
+}
+@media screen and (max-width: 480px) {
+  #navbar ul{
+    padding-left: 0;
+  }
+  #navbar ul li{
+    display: block;
+  }
+  #navbar ul li a{
+    display: block;
+    text-align: center;
+    font-size: .5em;
+  }
+}
+
+
+
+/* About the Website */
+#about{
+    clear: both;
+    margin-top: 25px;
+    padding-top: 25px;
+    margin-bottom: 75px;
+}
+#about h2{
+    font-family: "Pacifico", cursive;
+    color: #a5539b;
+    padding-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#about p{
+    text-align: left;
+    font-size: 18px;
+    width: 25%;
+    margin-left: 55%;
+}
+#about img{
+    max-width:100%;
+    height:auto;
+    margin-left: 25%;
+    float: left;
+}
+.para{
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+    #about h2{
+        font-size: 20px;
+        transition: all 0.5s ease;
+    }
+    #about img{
+        max-width:100%;
+        height: 50%;
+        width: 50%;
+        transition: all 0.5s ease;
+        margin-right: 100%;
+        margin-bottom: 5%;
+    }
+    #about p{
+        font-size: 16px;
+        width: 50%;
+        margin-left: 26%;
+    }
+}
+@media screen and (max-width: 480px) {
+    #about h2{
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+    #about img{
+        max-width:100%;
+        height: 25%;
+        width: 25%; 
+        margin-bottom: 3%;
+        transition: all 0.5s ease;     
+    }
+    #about p{
+        font-size: 14px;
+        margin-left: 16%;
+    }
+}
+
+/* Company Mission */
+#mission{
+    background-color: #f2f2f2; 
+    margin-top: 25px;
+    padding-top: 50px;
+    clear: both;
+    padding-bottom: 25px;
+}
+#mission h2{
+    font-family: "Pacifico", cursive;
+    color: #a5539b;
+    padding-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#mission p{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 20%;
+    padding-right: 20%; 
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #mission h2{
+        font-size: 20px;
+        transition: all 0.5s ease;
+    }
+    #mission p{
+        font-size: 16px;
+        transition: all 0.5s ease;
+    }
+}
+@media screen and (max-width: 480px) {
+    #mission h2{
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+    #mission p{
+        font-size: 14px;
+        transition: all 0.5s ease;
+    }
+}
+
+/*Company Menu */
+#menu{ 
+}
+#menu h2{
+    font-family: "Pacifico", cursive;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.mbox{
+    padding: 35px 50px 35px 50px;
+    background-color: #60d9ee;
+    border: 1px solid #60d9ee;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.mbox p{
+    color: white;
+    font-size: 18px;
+    font-family: "Pacifico", cursive;
+    border-bottom: 1px solid white;
+}
+
+#fcakes{
+    text-align: left;
+    margin-bottom: 25px;
+}
+#fcakes img{
+    max-width:100%;
+    height:auto;
+    margin-left: 17%;
+    padding-left: 10%;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    float: left;
+}
+#fcakes h3{
+    font-family: "Pacifico", cursive;
+    color: #a5539b;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-left: 20px;  
+}
+#fcakes li{
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+
+#ccakes{
+    text-align: left;
+    margin-bottom: 25px;
+    clear: both;
+}
+#ccakes img{
+    max-width:100%;
+    height:auto;
+    margin-left: 17%;
+    padding-left: 10%;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    float: left;
+}
+#ccakes h3{
+    font-family: "Pacifico", cursive;
+    color: #a5539b;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-left: 20px;  
+}
+#ccakes li{
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+.cmove{
+    margin-left: 675px;
+}
+
+#cupcakes{
+    text-align: left;
+    margin-bottom: 25px;
+    clear: both;
+}
+#cupcakes img{
+    max-width:100%;
+    height:auto;
+    margin-left: 17%;
+    padding-left: 10%;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    float: left;
+}
+#cupcakes h3{
+    font-family: "Pacifico", cursive;
+    color: #a5539b;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-left: 20px;  
+}
+#cupcakes li{
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+.cmove{
+    margin-left: 675px;
+}
+
+#desserts{
+    text-align: left;
+    margin-bottom: 25px;
+    clear: both;
+}
+#desserts img{
+    max-width:100%;
+    height:auto;
+    margin-left: 17%;
+    padding-left: 10%;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    float: left;
+}
+#desserts h3{
+    font-family: "Pacifico", cursive;
+    color: #a5539b;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-left: 20px;  
+}
+#desserts li{
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+.cmove{
+    margin-left: 675px;
+}
+
+#cookies{
+    text-align: left;
+    margin-bottom: 25px;
+    clear: both;
+}
+#cookies img{
+    max-width:100%;
+    height:auto;
+    margin-left: 17%;
+    padding-left: 10%;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    float: left;
+}
+#cookies h3{
+    font-family: "Pacifico", cursive;
+    color: #a5539b;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-left: 20px;  
+}
+#cookies li{
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+.cmove{
+    margin-left: 675px;
+}
+
+.lines{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #fcakes h3{
+        font-size: 20px;
+        transition: all 0.5s ease;    }
+    #fcakes li{
+        font-size: 16px;
+        transition: all 0.5s ease;
+    }
+    #fcakes img{
+        margin-left: 1%;
+        margin-bottom: 1%;
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s ease;
+    }
+    #ccakes h3{
+        font-size: 20px;
+        transition: all 0.5s ease;
+    }
+    #ccakes li{
+        font-size: 16px;
+        transition: all 0.5s ease;
+    }
+    #ccakes img{
+        margin-left: 1%;
+        margin-bottom: 1%;
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s ease;
+    }
+    #cupcakes h3{
+        font-size: 20px;
+        transition: all 0.5s ease;
+    }
+    #cupcakes li{
+        font-size: 16px;
+        transition: all 0.5s ease;
+    }
+    #cupcakes img{
+        margin-left: 1%;
+        margin-bottom: 1%;
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s ease;
+    }
+    #desserts h3{
+        font-size: 20px;
+        transition: all 0.5s ease;
+    }
+    #desserts li{
+        font-size: 16px; 
+        transition: all 0.5s ease;     
+    }
+    #desserts img{
+        margin-left: 1%;
+        margin-bottom: 1%;
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s ease;
+    }
+    #cookies h3{
+        font-size: 20px;
+        transition: all 0.5s ease;
+    }
+    #cookies li{
+        font-size: 16px;
+        transition: all 0.5s ease;
+    }
+    #cookies img{
+        margin-left: 1%;
+        margin-bottom: 1%;
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s ease;
+    }
+    .lines{
+        width: 768px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #fcakes h3{
+        font-size: 18px;
+        transition: all 0.5s ease;    }
+    #fcakes li{
+        font-size: 14px;
+        transition: all 0.5s ease;
+    }
+    #ccakes h3{
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+    #ccakes li{
+        font-size: 14px;
+        transition: all 0.5s ease;
+    }
+    #cupcakes h3{
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+    #cupcakes li{
+        font-size: 14px;
+        transition: all 0.5s ease;
+    }
+    #desserts h3{
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+    #desserts li{
+        font-size: 14px; 
+        transition: all 0.5s ease;     
+    }
+    #cookies h3{
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+    #cookies li{
+        font-size: 14px;
+        transition: all 0.5s ease;
+    }
+    .lines{
+        width: 480px;
+    }
+}
+
+/* Contact Company */
+#Contact_Us h3{
+    font-family: "Pacifico", cursive;
+    color: #a5539b;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;  
+}
+#Contact_Us img{
+  max-width:100%;
+  height:auto;
+  margin-top: 25px;
+  padding-left: 200px;
+  float: left;
+  padding-right: 200px;
+}
+
+#contactForm {
+  width: 30%;
+  float: left;
+}
+#contactForm span {
+    color: #3bbeef;
+    display:block;
+    float:left;
+    font-size: 15px;
+    width:40%;
+    padding-top:5px;
+    font-family: 'Bree Serif', Georgia, serif;
+}
+#contactForm .name{
+  float:left;
+  background-color: #f2f2f2;
+  width: 60%;
+  border:0px;
+  color:black;
+  padding:10px 10px 10px 30px;
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+  margin-bottom:10px;
+}
+#contactForm .email{
+  float:left;
+  background-color: #f2f2f2;
+  width: 60%;
+  border:0px;
+  color:black;
+  padding:10px 10px 10px 30px;
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+  margin-bottom:10px;    
+}
+#contactForm .coname{
+  float:left;
+  background-color: #f2f2f2;
+  width: 60%;
+  border:0px;
+  color:black;
+  padding:10px 10px 10px 30px;
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+  margin-bottom:10px;  
+}
+#contactForm .phone{
+  float:left;
+  background-color: #f2f2f2;
+  width: 60%;
+  border:0px;
+  color:black;
+  padding:10px 10px 10px 30px;
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+  margin-bottom:10px; 
+}
+#contactForm textarea {
+  float:left;
+  background-color: #f2f2f2;
+  border:0px;
+  width: 60%;
+  height: 100%;
+  padding:10px 10px 10px 30px;
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+  color:black;
+  resize: none;
+}
+#contactForm .submit{
+    margin-top: 20px;
+    margin-left: 100px;
+    float:right;
+    width: 25%;
+    border:0px;
+    color:#F1F1F1;
+    padding:10px 10px 10px 10px;
+    font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+    margin-bottom:40px;
+    background-color: #3bbeef;
+}
+
+@media screen and (max-width: 768px) {
+    #Contact_Us h3{
+        font-size: 20px;
+    }
+    #Contact_Us span{
+        font-size: 14px;
+        width: 50%;
+        text-align: left;
+    }
+    #contactForm {
+        width: 60%;
+        float: left;
+        margin-left: 10%;
+        padding-left: 18%;
+    }
+    #contactForm .name{
+        width: 100%;
+    }
+    #contactForm .email{
+        width: 100%;
+    }
+    #contactForm .phone{
+        width: 100%;
+    }
+    #contactForm .coname{
+        width: 100%;
+    }
+    #contactForm textarea{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    #Contact_Us h3{
+        font-size: 18px;
+    }
+    #Contact_Us span{
+        font-size: 12px;
+        width: 20%;
+    }
+    #contactForm {
+        width: 60%;
+        float: left;
+        margin-left: 10%;
+        padding-left: 18%;
+    }
+    #contactForm .name{
+        width: 100%;
+    }
+    #contactForm .email{
+        width: 100%;
+    }
+    #contactForm .phone{
+        width: 100%;
+    }
+    #contactForm .coname{
+        width: 100%;
+    }
+    #contactForm textarea{
+        width: 100%;
+    }
+}
+
+/* Company Location */
+#location{
+    clear: both;
+}
+#location h3{
+    font-family: "Pacifico", cursive;
+    color: #a5539b;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;    
+}
+#location p{
+    font-size: 18px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+#location h4{
+    color: #3bbeef;
+    font-size: 24px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.strong{
+    color: #3bbeef;
+    font-weight: bold;
+}
+#montague{
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    float: left;
+}
+#shankill{
+    margin-top: 2%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    float: right;
+}
+.map{
+    width: 49%;
+    margin-right: .5%;
+    clear: both;
+  }
+.map1{
+    width: 49%;
+    margin-left: .5%;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    #location h3{
+      font-size: 20px;
+      transition: all 0.5s ease;
+    }    
+    #location p {
+      font-size: 16px;
+      transition: all 0.5s ease;
+    }
+    #location h4{
+      font-size: 20px;
+      transition: all 0.5s ease;
+    }
+    #location span{
+      font-size: 16px;
+      transition: all 0.5s ease;
+    }
+    #montague{
+      margin-left: 20%;
+    }
+    #shankill{
+      margin-right: 20%;
+    }
+}
+@media screen and (max-width: 480px) {
+    #location h3{
+      font-size: 18px;
+      transition: all 0.5s ease;
+    }
+    #location p{
+      font-size: 14px;
+      transition: all 0.5s ease;
+    }
+    #location h4{
+      font-size: 18px;
+      transition: all 0.5s ease;      
+    }
+    #location span{
+      font-size: 14px;
+      transition: all 0.5s ease;
+    }
+}
+
+/* Footer */
+footer{
+    background-color: #a5539b;
+    color: white;
+}
+.footerb{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: left;
+    width: 33%;
+}
+.footerb h3{
+    font-family: "Pacifico", cursive;
+    padding-bottom: 10px;
+    color: #3bbeef;
+    font-size: 24px;
+    font-weight: bold;
+}
+.footerb p{
+    font-size: 18px;
+    padding-bottom: 7px;
+}
+.footerb ul {
+    list-style-type: none;
+}
+.footerb ul li {
+    padding-bottom: 5px;
+}
+.footerb ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footerb ul li a:hover {
+    color: #cccccc;  
+}
+#lowefooter{
+    font-size: 18px;
+    clear: both;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.insidefoot{
+    color: white;
+    border-top: 1px solid white;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #footerb h3{
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+    #footerb p{
+      font-size: 16px;
+      transition: all 0.5s ease;
+    }
+    #lowefooter{
+      font-size: 14px;
+      transition: all 0.5s ease;
+    }
+}
+@media screen and (max-width: 480px) {
+    #footerb h3{
+        font-size: 16px;
+        transition: all 0.5s ease;
+    }
+    #footerb p{
+      font-size: 14px;
+      transition: all 0.5s ease;
+    }
+    #lowefooter{
+      font-size: 12px;
+      transition: all 0.5s ease;
+    }
+}
+
+.group:before,
+.group:after{
+    content: " ";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
